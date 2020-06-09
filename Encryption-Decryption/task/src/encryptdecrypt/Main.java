@@ -76,7 +76,7 @@ class AlphabetAlgorithm implements Algorithm {
         for (char ch : string.toCharArray()) {
             if (ch >= 'a' && ch <= 'z') {
                 char shiftedCh;
-                if (encrypt) {
+                if (encrypt) {  
                     shiftedCh = (char) ((ch - 'a' + key) % 26 + 'a');
                 } else {
                     shiftedCh = (char) ((26 + ch - 'a' - key) % 26 + 'a');
